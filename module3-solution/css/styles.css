@@ -1,0 +1,139 @@
+/* Header*/
+.navbar {
+	background-color: #26303D;
+}
+.nav-link, .navbar-brand{
+	color: #E1DEDE;
+}
+
+.nav-link:hover {
+	color: #FFA518;
+	text-decoration: underline;
+}
+
+.navbar-toggler {
+	color: #E1DEDE;
+	border-color: #E1DEDE;
+}
+.navbar-brand:hover {
+	color: #FF6D1D;
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+button:focus {
+	background-color: #FF6D1D;
+	outline: none !important;
+}
+
+/* End of Header*/
+
+/* Main body*/
+body {
+	background-color: #E1DEDE;
+	color: #26303D;
+}
+h1 {
+	margin-top: 10px;
+}
+section.row > div {
+	padding: 0;
+}
+
+div#cell {
+	background-color: #FFA518;
+	border: 2px solid #FF6D1D;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 10px;
+	height: 850px;
+	overflow: auto;
+}
+h3#food-title {
+	font-size: 1.5em;
+	text-align: center;
+	font-style: bold;
+	text-transform: uppercase;
+}
+
+p.memu-discription {
+	font-size: 1em;
+	padding: 10px;
+	padding-top: 0;
+}
+
+a#Back-to-top {
+	color: #E1DEDE;
+	font-size: .9em;
+}
+
+a#Back-to-top:hover {
+	font-style: italic;
+	text-decoration: none;
+}
+/* drop-down menu*/
+nav a.nav-link {
+	text-align: center;
+}
+
+/* Responsive behaviors*/
+
+/********** mobile device only (extra small) **********/
+@media (max-width: 575px) {
+	div#cell {
+		height: auto;
+		margin: 10px;
+	}
+}
+
+/********** Tablet device only (small) **********/
+@media (min-width: 576px) and (max-width: 767px) {
+	nav button.navbar-toggler, .navbar-collapse {
+		display: none !important;
+	}
+	div#cell a#Back-to-top {
+		display: none;
+	}
+	div#cell {
+		height: 500px;
+	}
+	div#Sushi > div#cell {
+		height: auto;
+	}
+}
+
+/********** desktop device only (medium) **********/
+@media (min-width: 768px) {
+	nav button.navbar-toggler, .navbar-collapse {
+		display: none !important;
+	}
+	div#cell a#Back-to-top {
+		display: none;
+	}
+}
+
+/********** desktop device only (medium) **********/
+@media (min-width: 992px) {
+	nav button.navbar-toggler, .navbar-collapse {
+		display: none !important;
+	}
+	div#cell a#Back-to-top {
+		display: none;
+	}
+	div#cell {
+		height: 600px;
+	}
+}
+
+
+/* End of responsive behaviors*/
